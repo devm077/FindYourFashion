@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log into you account</title>
+    <link rel="stylesheet" href="styles/clogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Welcome to Find Your Fashion!!! Please login with your credentials.</h1>
+    <div class="content">
+
+        <div class="center">
+            <div class="imagebox">
+                <img src="images/loginbg.png" alt="">
+            </div>
+            <div class="frmpg">
+                <form action="/login/submit" method="post">
+                    <div class="excreds underline-hover">Enter your Credentials</div>
+                    <div class="creds">
+                        <div class="bold-creds"><b>Enter your User-ID</b><br></div>
+                        <div class="centre-input"><input type="text" id="uid" name="cuser" required><br><br></div>
+                        <div class="bold-creds"><b>Enter your Password</b><br></div>
+                        <div class="centre-input"><input type="password" id="password" name="cpwd" required><br>
+                        </div>
+                    </div>
+                    <div class="btn"><button type="submit"id="login">Login</button></div>
+                </form>
+                <div class="redirect">New user? Click here to <a href="register.html">sign up</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

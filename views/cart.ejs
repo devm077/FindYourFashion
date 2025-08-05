@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Cart</title>
+  <link rel="stylesheet" href="styles/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <nav class="navigation-bar">
+    <img class="logo" src="t.png">
+    <h1>Review your Cart <i style="font-size:24px" class="fa">&#xf07a;</i></h1>
+  </nav>
+  <table style="width:100%">
+    <tr>
+      <th>Product Image</th>
+      <th>Product Name</th>
+      <th>Size</th>
+      <th>Quantity</th>
+      <th>Price (in Rs.)</th>
+      <th>Amount</th>
+      <th>Remove</th>
+    </tr>
+    <% cartDetails.forEach(element=> { %>
+      <tr>
+        <td><img src="prodimg/<%= element.filename %>" alt="image"></td>
+        <td>
+          <%= element.category %>
+            <%= element.wear %>
+        </td>
+        <td>
+          <%= element.wearsize %>
+        </td>
+        <td>
+          <%= element.qty %>
+        </td>
+        <td><b>
+            <%= element.price_per_item %>
+          </b></td>
+        <td><b>₹<%= element.amount %></b></td>
+        <td>
+          <form action="/remove-item" method="post">
+            <input type="hidden" name="pid" value="<%= element.pid %>">
+            <button type="submit" class="minus-button"><svg width="24" height="24" viewBox="0 0 24 24">
+                <path d="M19 13H5v-2h14v2z" />
+              </svg></button>
+          </form>
+        </td>
+
+      </tr>
+      <% }); %>
+
+        <% if (totalprice[0]) { %>
+          <tr>
+            <td colspan="5" style="text-align:right;"><strong>Total Price:</strong></td>
+            <td><b>
+                <%= totalprice[0].totalprice %>
+              </b></td>
+          </tr>
+          <% } else { %>
+            <tr>
+              <td colspan="6" style="text-align:center;"><strong>Your cart is empty!</strong></td>
+            </tr>
+            <% } %>
+
+  </table><br><br><br><br>
+  <form action="/checkout" method="get">
+    <button class="buy" type="submit">Proceed To Checkout &rarr;</button>
+  </form>
+  
+
+</body>
+</html>

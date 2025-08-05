@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navigation-bar {
+  width: 99vw;
+  height: 110px;
+  /* background-color: rgb(196, 196, 35); */
+  background: linear-gradient(45deg, #8b8b2c, #c4c423, #ffff55);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0 20px; */
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-left: 0px;
+  margin-top: 0px;    
+  border: 2px solid black;
+}
+
+.navigation-bar form {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.navigation-bar input[type="text"] {
+  height: 40px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 0 10px;
+}
+
+.a1 {
+  background-color: #45a049;
+  cursor: pointer;
+  font-size: large;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  border: 3px solid #000000;
+}
+
+.a1:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  font-size: large;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* background-color: #45a049; */
+  transition: background-color 0.3s;
+}
+
+.navigation-bar a:hover {
+  color: #ffffff;
+}
+
+/**/
+
+/* .navigation-bar form button {
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  background-color: #4CAF50; 
+  transition: background-color 0.3s; 
+}
+
+.navigation-bar form button:hover {
+  background-color: #45a049;
+} */
+
+/**/
+
+/* .slideshow-container {
+  max-width: 100%;
+  max-height: 300%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  z-index: -1;
+  height: 50vh;
+  width: 100%;
+  
+}
+
+.slideshow-container .mySlides img {
+  height: 100%; 
+   width: 100%; 
+  width: auto;
+  display: block;
+  margin: 0 auto;
+} */
+
+
+.slideshow-container {
+  max-width: 100%;
+  max-height: 300%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  z-index: -1;
+  height: 80vh;
+  width: 100vw;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+div.scrollmenu {
+  background-color: #9094fb;
+  overflow: auto;
+  white-space: nowrap;
+  height: 40vh;
+  overflow-y: hidden;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  margin-right: 8%;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(25, 25, 139);
+}
+
+.logout {
+  background-color: #ff0000;
+  cursor: pointer;
+  font-size: large;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  border: 3px solid #000000;
+}
+
+.logout:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}

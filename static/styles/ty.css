@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg,rgb(2, 190, 190),aqua,rgb(172, 227, 227),aqua,rgb(172, 227, 227));
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.navigation-bar {
+    width: 100%; 
+    height: 110px;
+    /* background-color:rgb(196, 196, 35);  */
+    background: linear-gradient(45deg, #8b8b2c, #c4c423, #ffff55);
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 0px;    
+    border: 2px solid black;
+  }
+
+  .logout {
+    background-color: #ff0000;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 3px solid #000000;
+    width: 150px;
+    margin-left: 17.5px;
+  }
+  
+  .logout:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .container {
+    
+    background-size: contain;
+  }
+
+.circle{
+    border-radius:50%;
+    background-color:#8cc63e;
+    position:relative;
+    width:150px;
+    height:150px;
+    }
+    .checkmark{
+    position:absolute;
+    transform: rotate(45deg) translate(-50%, -50%);
+    left: 35%;
+    top: 45%;
+    height:50px;
+    width:25px;
+    border-bottom:7px solid white;
+    border-right:7px solid white;
+    }
+    .tickmark{
+    width:100px;
+    height:50px;
+    margin:auto;
+    margin-top: 50px;
+    }
+    .ty{
+    color:rgb(76, 171, 41);
+    font-size:60px;
+    padding:53px;
+    margin:71px;
+    /* margin-top: 100px; */
+    text-align:center;
+    }
+
+    .text{
+    font-size:30px;
+    text-align:center;
+    margin:-100px;
+    padding:50px;
+    }
+
+    .btn {
+      width: fit-content;
+      margin: auto;
+    }
+    
+    .homebtn {
+      background-color: burlywood;
+      cursor: pointer;
+      font-size: large;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+      border: 3px solid #000000;
+      margin-top: 100px;
+    }
+  
+    .homebtn:hover {
+      border-color: #ffffff;
+      color: #ffffff;
+    }

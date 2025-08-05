@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles/alogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Sacramento&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <h1>Hello Admin!!! Please Log into your Account</h1>
+    <div class="center">
+        <div class="imagebox">
+            <img src="img/alogin.jpeg" alt="">
+        </div>
+        <div class="formpg">
+            <form action="/admin-login" method="post">
+                <div class="excreds underline-hover">
+                    Enter the details
+                </div>
+                <div class="creds">
+                    <div class="bold-creds">
+                        Enter your ID
+                    </div>
+                    <div class="center-input">
+                        <input type="text" name="admin_id" id="aid" required>
+                    </div>
+                    <div class="bold-creds">
+                        Enter the password
+                    </div>
+                    <div class="centerinput">
+                        <input type="password" name="password" id="apass" required>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Submit</button>
+                    </div>
+                    <div class="change">
+                        Click here to <a href="#">renew password</a>
+                    </div>
+                    <div id="errorMessage" class="error-message"></div> 
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- <script src="js/alogin.js"></script> -->
+</html>

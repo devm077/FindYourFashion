@@ -1,0 +1,155 @@
+body {
+    overflow-x: hidden;
+    /*overflow-y: hidden;
+    margin-bottom: 1000px;*/
+    padding: 0;
+    background: linear-gradient(to bottom right, #f951f6, #ffa8fe, #e0bee0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: "Sacramento", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4vh;
+    text-align: center;
+    background: linear-gradient(40deg, #00a500,#3fd03f,#78ee78);
+    width: 100%;
+    border: 5px black;
+    border-style: double;
+}
+
+.center {
+    width: 30vw;
+    min-width: 300px;
+    height: auto;
+    margin: auto;
+    margin-top: 4vh;
+    border: 2px solid black;
+    /*background-color: #e9e9b9;*/
+    background: linear-gradient(to bottom right, #f6f6de, #e9e9b9, #eaea93);
+    border-radius: 25px;
+}
+
+.imagebox {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    /*border: 2px solid blue;*/
+}
+
+img {
+    width: 100%;
+}
+
+.frmpg {
+    width: 85%;
+    /*border: 2px solid red;*/
+    margin: auto;
+    margin-top: 10px;
+}
+
+.excreds {
+    width: 85%;
+    margin: auto;
+    /*border: 2px solid yellow;*/
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5.5vh;
+    color: #111167;
+}
+
+.creds {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*border: 2px solid green;*/
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 3vh;
+    font-variant: small-caps;
+    color: #111167;
+}
+
+.bold-creds {
+    text-align: center;
+    font-weight: 900;
+}
+
+.btn {
+    width: fit-content;
+    min-width: 100px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button {
+    font-family: "Sacramento", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4vh;
+    width: 100%;
+    min-width: fit-content;
+    margin: auto;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    background-color: #00a500;
+    border-radius: 10px;
+    color: #111167;
+    transition: 200ms;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+input {
+    font-size: 3vh;
+    font-weight: lighter;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    text-align: center;
+    width: 90%;
+    color: #111167;
+}
+
+.underline-hover:hover {
+    text-decoration: underline;
+}
+
+.centre-input {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirect {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 2vh;
+}
+
+a:visited {
+    color: blue;
+  }

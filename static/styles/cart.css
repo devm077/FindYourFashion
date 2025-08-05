@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, #8b8b2c, #c4c423);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navigation-bar {
+    width: 100%; 
+    height: 110px;
+    /* background-color:rgb(196, 196, 35);  */
+    background: linear-gradient(45deg, #8b8b2c, #c4c423, #ffff55);
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .logo, .title {
+    display: block;
+  }
+  
+  .logo {
+    width: 25%;
+  }
+
+  .title {
+   margin-left: 50px;
+    
+  }
+  
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 110px;
+    margin-right: 20px;
+    margin-top: 0px;    
+  }
+  
+  .a1{
+
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    font-weight: bolder;
+    height: 50px;
+    width: 70px;
+    text-align: center;
+    position: relative;
+    left: 60%;
+    top: 30px;
+  
+   
+  
+  }
+  
+  
+  .a1:hover{
+    border-radius: 20px;
+    background-color: rgb(90, 69, 252);
+    color:rgb(236, 236, 19);
+    font-weight: 800;
+    text-decoration: underline;
+  }
+
+h1{
+    color: #1616b2;
+    text-align: center;
+    /* text-decoration: underline; */
+    border: 5px groove rgb(0, 19, 159);
+    padding: 10px 10px;
+}
+
+table {
+  background: linear-gradient(1800deg, #add8e6, rgb(150, 227, 227));
+}
+
+table, th, td {
+  border:3px solid brown;
+  border-radius: 5px;
+  text-align: center;
+  
+}
+
+.buy{
+  border: 3px solid burlywood;
+  border-radius: 10px;
+  background-color: rgb(174, 82, 17);
+  font-weight: bolder;
+  font-size: large;
+  color: yellow;
+  width: 16vw;
+  height: 6vh;
+  position: relative;
+  left: 40%;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.buy:hover {
+  background-color: yellow;
+  color: rgb(174, 82, 17);
+}
+
+th{
+  font-weight: bold;
+  font-size: large;
+
+}
+
+td{
+  font-size: large;
+}
+
+.minus-button {
+  background: rgb(232, 231, 231);
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.minus-button svg {
+  width: 24px;
+  height: 24px;
+  fill: #000;
+}
+
+ .minus-button svg:hover {
+  background-color: #000;
+  fill: rgb(232, 231, 231);
+}

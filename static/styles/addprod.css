@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+  
+  }
+  .navigation-bar {
+    width: 100%; 
+    height: 110px;
+    /* background-color:rgb(196, 196, 35);  */
+    background: linear-gradient(45deg, #8b8b2c, #c4c423, #ffff55);
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 0px;    
+    border: 2px solid black;
+  }
+
+  h2{
+    color: #1616b2;
+    text-align: center;
+    /* text-decoration: underline; */
+    border: 5px groove rgb(0, 19, 159);
+    padding: 10px 10px;
+  }
+
+  .alogout {
+    background-color: #ff0000;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 3px solid #000000;
+    margin-left: 50vw;
+    margin-right: 10px;
+    
+  }
+
+  .alogout:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .container {
+    background: linear-gradient(45deg,rgb(2, 190, 190),aqua,rgb(172, 227, 227),aqua,rgb(172, 227, 227));
+    background-size: cover;
+    padding: 25px 25px;
+    /* display: flex; */
+  }
+  
+  .containerbox {
+    width: 40vw;
+    border: 2px solid red;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 45px;
+    padding-top: 20px;
+    background: linear-gradient(45deg, whitesmoke, #dcd9d9,#ded3d3,#f6f6f6,#e3dcdc,#ffffff);
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .col1, .col2 {
+    display: block;
+  }
+
+  .col1 {
+    width: 300px;
+  }
+
+  .submitbtn {
+    width: fit-content;
+    margin: auto;
+  }
+
+label{
+    color: brown;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+}
+
+#category ,#price, #wear, #price, #pqty, #image, #wname {
+    width: 15vw;
+    height: 3vh;
+    /* border-radius: 5px; */
+    border: 3px solid red;
+    background-color: rgba(255, 255, 0, 0.768);
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    
+}
+
+#submit{
+  border: 3px solid burlywood;
+  border-radius: 10px;
+  color: #ffd700;
+  background-color: red;
+  cursor: pointer;
+  width:7.5vw;
+  height:6vh;
+  font-weight:bold;
+  font-size: 2.5vh;
+}
+
+#submit:hover {
+  background-color: #ffd700;
+  color: red;
+}

@@ -1,0 +1,460 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden ;
+  
+  }
+  .navigation-bar {
+    width: 100%; 
+    height: 110px;
+    /* background-color:rgb(196, 196, 35);  */
+    background: linear-gradient(45deg, #8b8b2c, #c4c423, #ffff55);
+    display: flex;
+    align-items: center;
+  }
+
+  #searchbar {
+    margin-right: 50px;
+    margin-bottom: 55px;
+  }
+
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 0px;    
+    border: 2px solid black;
+  }
+
+  .cartbtn {
+    background-color: #45a049;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 3px solid #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .cartbtn:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .homebtn {
+    background-color: burlywood;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 3px solid #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .homebtn:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .logout {
+    background-color: #ff0000;
+    cursor: pointer;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    border: 3px solid #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .logout:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+
+  .navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 40px;       
+    line-height: 40px;   
+  }
+  a{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    font-weight: bolder;
+    height: 60%;
+    width: 8%;
+    text-align: center;
+   
+  }
+  .a1{
+    position: relative;
+    left: 200px;
+    top: 30px;
+  
+  }
+  .a2{
+    position: relative;
+    left: 310px;
+    top: 30px;
+  }
+  input{
+    position: relative;
+    left: 50px;
+    top: 30px;
+    height: 38%;
+    width: 40%;
+    border-radius: 50px;
+    background-color:rgb(222, 238, 255);
+    color: brown;
+    font-weight: bold;
+    font-size: medium;
+  
+  }
+  
+  .containerbox {
+    display:flex;
+    /* border: 3px solid aqua; */
+    align-items: center;
+    
+  }
+
+  .col1, .col2 {
+    display: block;
+  }
+
+  .col1 {
+    width: 30%;
+  }
+
+  .col2 {
+    height: 86.5vh;
+    background: linear-gradient(45deg, rgb(171, 130, 7), rgb(245, 189, 21),rgb(255, 214, 93));
+  }
+
+  #proimg {
+    border: 2px solid black;
+    animation: fborderglow 6s ease 0s infinite normal forwards;
+  }
+
+  #frame {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #frame label {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  #slides {
+    padding: 5px;
+    /* border: 5px solid #0F0; */
+    background: #00F;
+    position: relative;
+    z-index: -1;
+  }
+
+  #overflow {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #frame1:checked~#slides .inner {
+    margin-left: 0;
+  }
+
+  #frame2:checked~#slides .inner {
+    margin-left: -100%;
+  }
+
+  #frame3:checked~#slides .inner {
+    margin-left: -200%;
+  }
+
+  #frame4:checked~#slides .inner {
+    margin-left: -300%;
+  }
+
+  #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+  }
+
+  #slides .frame {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210%;
+    color: #FFF;
+  }
+
+  #slides .frame_1 {
+    background: #90C;
+  }
+
+  #slides .frame_2 {
+    background: #90C;
+  }
+
+  #slides .frame_3 {
+    background: #90C;
+  }
+
+  #slides .frame_4 {
+    background: #90C;
+  }
+
+  #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+  }
+
+  #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+  }
+
+  #controls label:hover {
+    opacity: 1;
+  }
+
+  #frame1:checked~#controls label:nth-child(2),
+  #frame2:checked~#controls label:nth-child(3),
+  #frame3:checked~#controls label:nth-child(4),
+  #frame4:checked~#controls label:nth-child(1) {
+    background:
+      url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+  }
+
+  #frame1:checked~#controls label:nth-last-child(2),
+  #frame2:checked~#controls label:nth-last-child(3),
+  #frame3:checked~#controls label:nth-last-child(4),
+  #frame4:checked~#controls label:nth-last-child(1) {
+    background:
+      url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+  }
+
+  #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+  }
+
+  #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+  }
+
+  #frame1:checked~#bullets label:nth-child(1),
+  #frame2:checked~#bullets label:nth-child(2),
+  #frame3:checked~#bullets label:nth-child(3),
+  #frame4:checked~#bullets label:nth-child(4) {
+    background: #444;
+  }
+
+  @media screen and (max-width: 900px) {
+
+    #frame1:checked~#controls label:nth-child(2),
+    #frame2:checked~#controls label:nth-child(3),
+    #frame3:checked~#controls label:nth-child(4),
+    #frame4:checked~#controls label:nth-child(1),
+    #frame1:checked~#controls label:nth-last-child(2),
+    #frame2:checked~#controls label:nth-last-child(3),
+    #frame3:checked~#controls label:nth-last-child(4),
+    #frame4:checked~#controls label:nth-last-child(1) {
+      margin: 0;
+    }
+
+    #slides {
+      max-width: calc(100% - 140px);
+      margin: 0 auto;
+    }
+  }
+
+  
+
+  h1{
+    text-align: center;
+    font-weight:bolder;
+    color: #00F;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  span {
+    color: green;
+  }
+
+.btn1{
+  background-color: rgb(234, 197, 12);
+  color: rgb(96, 9, 80);
+  height: 7vh;
+  width: 11%;
+  border-radius: 10px;
+  border-color: red;
+}
+
+.btn1:hover {
+  background-color: rgb(96,9,80);
+  color: rgb(234, 197, 12);
+}
+span{
+  color: #00F;
+}
+
+.info{
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+  left: 1%;
+  border: 4px solid rgb(106, 13, 13);
+  border-radius: 18px;
+
+}
+
+h2{
+  text-align: center;
+}
+.price{
+  font-weight:900;
+  color: brown;
+  font-size: medium;
+}
+
+.sp{
+  color: brown;
+  font-size: medium;
+
+}
+
+.pre {
+  margin-left: 6%;
+  text-decoration: none;
+  display: inline-block;
+  height: 30%;
+  width: 14%;
+  font-size:150%;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  background-color:burlywood ;
+}
+
+#Qty{
+  font-weight: bold;
+  font-size: large;
+  border-radius: 10px;
+  width: 10%;
+  position: relative;
+  top: 20%;
+  left: 0%;
+}
+
+#quantity{
+  font-weight: bold;
+  color: #00F;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.size{
+  position: relative;
+  left: 40%;
+  font-weight: bold;
+  font-size: large;
+  
+  
+}
+
+label[for="size"] {
+  text-decoration: underline;
+  color: blue;
+}
+
+#size{
+  border: 3px solid burlywood;
+  border-radius: 10px;
+  background-color: antiquewhite;
+
+}
+
+#price{
+  all:unset;
+  /* border: 3px solid burlywood;
+  border-radius: 20px; */
+  position: relative;
+  left: 41%;
+
+}
+#cost{
+  position: relative;
+  left: 40%;
+  font-size: large;
+  font-weight: 800;
+  color: blue;
+  text-decoration: underline;
+
+}
+#name{
+  all: unset;
+  position: relative;
+  left: 41%;
+}
+#wname{
+  
+  position: relative;
+  left: 40%;
+  font-size: large;
+  font-weight: 600;
+  color: blue;
+  text-decoration: underline;
+
+}
+
+@keyframes fborderglow {
+
+  0%, 50% {
+      border: 4px solid #90c;
+  }
+
+  50%, 100% {
+      border: 4px solid rgb(255, 191, 0);
+  }
+}

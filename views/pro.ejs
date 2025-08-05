@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="/styles/pro.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+  <nav class="navigation-bar">
+    <img class="logo" src="https://th.bing.com/th/id/OIP.jcMEgIRutpVK4G1PQZyzlgAAAA?rs=1&pid=ImgDetMain" width="200px"
+      height="110px">
+    <input type="text" placeholder="  Search for Products , Brands and More . . ." id="searchbar">
+    <form action="/view-cart" method="GET">
+      <button type="submit" class="cartbtn">View Cart</button>
+    </form>
+    <form action="/back-to-home" method="get">
+      <button class="homebtn">&laquo; Back To Home</button>
+    </form>
+    <form action="/user-logout">
+      <button class="logout">Logout</button>
+    </form>
+  </nav>
+
+  <div class="containerbox">
+
+    <div class="col1">
+      <div id="frame">
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="frame frame_1">
+                <div class="frame-content">
+                  <h2><img src="/prodimg/<%= productDetails[0].filename %>" alt="Product Image" width="300px" height="auto" id="proimg"></h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br>
+
+    <div class="col2">
+      <h1><b><u>Product Details</u></b></h1><br><br><br><br>
+      <label for="price" id="cost">Price ( in Rs. )</label> <input type="number" id="price" name="price" value="<%= productDetails[0].price %>" disabled><br><br><br>
+      <label for="wname" id="wname">Name of wholesaler : </label> <input type="text" id="name" name="wname" value="<%= productDetails[0].wname %>" disabled><br><br><br>
+
+      <div class="container" text-align="center">
+        <p>
+        <form action="/add-to-cart" method="post">
+          <div class="size">
+            <label for="size">Select your Size : </label>
+            <select name="wearsize" id="size">
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+
+          </div>
+          <label for="Qty" id="quantity">Quantity:</label>
+          &emsp;<input type="number" id="Qty" name="qty" min="1" max="50" value="1">
+          <input type="hidden" name="pid" value="<%= productDetails[0].pid  %>">
+          &emsp;&emsp;
+          <button type="submit" class="btn1">
+
+            <span class="glyphicon glyphicon-shopping-cart">
+            </span>
+            <b> Add to Cart </b>
+          </button>
+        </form>
+        </p>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+
+
+
+  </div>
+
+</body>
+
+</html>

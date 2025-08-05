@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/addprod.css">
+  <title>+ Add new Product</title>
+  <script>
+    function showOptions() {
+      var category = document.getElementById("category").value;
+      var menOptions = ["T-Shirts", "Formal Shirts", "Shoes", "Jeans"];
+      var womenOptions = ["Sarees", "Ethnic Wear", "Footwear", "Bags"];
+      var boysOptions = ["T-Shirts", "Ethnic Wear", "Jeans"];
+      var girlsOptions = ["Frock", "Ethnic Wear"];
+
+      var options = [];
+      switch (category) {
+        case "Men":
+          options = menOptions;
+          break;
+        case "Women":
+          options = womenOptions;
+          break;
+        case "boys":
+          options = boysOptions;
+          break;
+        case "girls":
+          options = girlsOptions;
+          break;
+        default:
+          options = [];
+      }
+
+      var optionsHtml = "";
+      for (var i = 0; i < options.length; i++) {
+        optionsHtml += "<option>" + options[i] + "</option>";
+      }
+
+      document.getElementById("wear").innerHTML = optionsHtml;
+    }
+  </script>
+</head>
+
+<body>
+
+  <nav class="navigation-bar">
+    <img class="logo" src="https://th.bing.com/th/id/OIP.jcMEgIRutpVK4G1PQZyzlgAAAA?rs=1&pid=ImgDetMain" width="200px"
+      height="110px">
+    <h2 class="title">Please enter the Product Details </h2>
+    <form action="/admin-logout">
+      <button class="alogout">Logout</button>
+    </form>
+  </nav>
+  <div class="container">
+    <div class="containerbox">
+      <form action="/admin/add-product/submit" method="post" enctype="multipart/form-data">
+        <div class="row">
+          <div class="col1"><label>Enter the category</label></div>
+          <div class="col2">
+            <select name="category" id="category" required onchange="showOptions()" required>
+              <option value="select">Select</option>
+              <option value="Men">Men</option>
+              <option value="Women">Women</option>
+              <option value="boys">Boys</option>
+              <option value="girls">girls</option>
+            </select>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="wear">Select wear</label></div>
+          <div class="col2">
+            <select id="wear" name="wear">
+              <option>Select a category first</option>
+            </select>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="price">Enter the price of Product (in Rs.) </label></div>
+          <div class="col2">
+            <input type="number" id="price" name="price" min="1" max="50000">
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="qty">Enter the number of units for size S </label></div>
+          <div class="col2">
+            <input type="number" id="pqty" name="Sqty" min="0" max="500" required>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="qty">Enter the number of units for size M </label></div>
+          <div class="col2">
+            <input type="number" id="pqty" name="Mqty" min="0" max="500" required>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="qty">Enter the number of units for size L </label></div>
+          <div class="col2">
+            <input type="number" id="pqty" name="Lqty" min="0" max="500" required>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="qty">Enter the number of units for size XL </label></div>
+          <div class="col2">
+            <input type="number" id="pqty" name="XLqty" min="0" max="500" required>
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="image">Upload the images of the Product</label></div>
+          <div class="col2">
+            <input type="file" id="image" name="image" accept="image/*">
+          </div>
+        </div><br><br>
+        <div class="row">
+          <div class="col1"><label for="wname">Enter the name of wholesaler :</label></div>
+          <div class="col2">
+            <input type="text" id="wname" name="wname"><br><br><br>
+          </div>
+        </div>
+        <div class="submitbtn"><input id="submit" type="submit"><br><br></div>
+      </form>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
